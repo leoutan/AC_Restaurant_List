@@ -36,7 +36,7 @@ app.get('/search', (req, res)=>{
       }
     })
   ):restaurants
-  res.render('index', {restaurants: filteredRestaurant})
+  res.render('index', {restaurants: filteredRestaurant, keyword})
 })
 
 app.listen(port, ()=>{
